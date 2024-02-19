@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+ .galeria{
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagenesant/antmanrunarmy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+	 
+   
+    }
+
+.fondonegro {display: inline-block;text-align:center;}
+
+.escena {text-align:left;
+display:inline-block;}
 
 *{ font-family: 'Montserrat', sans-serif;
 margin: 0;
@@ -15,13 +31,12 @@ body{
 }
 
 .encabezadoescenas{
-    text-align: center;
-    font-size: 24px;
-    padding: 1rem;
-    margin-top: 2.5rem;
-    font-weight: bold;
-    color: #eb2f06;
-    background-color: #fff;
+	text-align: center;
+	font-size: 24px;
+	padding: 1rem;
+	font-weight: bold;
+	color: #eb2f06;
+	background-color: #333;
 }
 main{
     background-color: #A89F9F !important;
@@ -125,9 +140,9 @@ h3{
 
 
 section{
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-around;
+	/* [disabled]margin-top: 5rem; */
+	display: flex;
+	justify-content: space-around;
 }
 section img{
     max-width: 100%;
@@ -135,12 +150,18 @@ section img{
 
 .galeria .escena {
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 1px 3px 8px 1px #000;    
+    border-radius: 0;
+    /* [disabled]box-shadow: 1px 3px 8px 1px #000; */
     margin: 1rem;
-	width:40%;
-	padding:20px;
+    width: 40%;
+    padding: 20px;
+    /* [disabled]-webkit-box-shadow: 1px 3px 8px 1px #000; */
+    float: none;
 }
+.fondonegro .escena p {
+    color: white;
+}
+
 .galeria .escena img{
    padding-bottom:10px;
     display: block;
@@ -259,7 +280,7 @@ section img{
 @media (min-width: 992px) and (max-width: 1200px) {
     .galeria{
         flex-wrap: wrap;
-        padding: .5rem;
+     
     }
 }
 
@@ -272,8 +293,5 @@ section img{
         justify-content: space-between;
      
     }
-    .galeria{
-        flex-wrap: wrap;
-
-    }
+   
 }

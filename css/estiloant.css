@@ -113,6 +113,8 @@ form{
     border-style: solid;
     border-width: 5px;
     border-radius: 15px;
+    float: left;
+    display: inline-block;
 
 }
 form input{
@@ -120,6 +122,7 @@ form input{
     margin-bottom: 10px;
 }
 form label{
+    margin-top: 0px;
 
 }
 form .inline label{
@@ -177,11 +180,11 @@ form .div-botones{
 }
 
 .encabezadotrivia{
-    background-color: #fff;
+    background-color: #333;
     padding: 12px 0;
-    margin:2.5rem 0;
+    margin-right: 0;
+    margin-left: 0;
     font-size: 20px;
-
     color: red;
     text-align: center;
 
@@ -352,6 +355,6 @@ footer img{
         background-size: cover;
     }
     main form{
-        margin: auto 100px;
+    margin: auto;
      }
 }

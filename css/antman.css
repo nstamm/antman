@@ -8,6 +8,40 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+.contenidotrivia .remera p {
+    margin: 10px;
+    color: white;
+}
+
+.contenidotrivia .remera {
+    width: 408px;
+    float: left;
+    margin-left: 25px;
+}
+.contenidotrivia .remera h1 {
+    margin: 10px;
+    color: red;
+}
+
+
+.contenidotrivia {
+    padding: 20px 15% 20px 15%;
+    background-image: url(../imagenesant/ant-man-costume-t-shirt.jpg);
+    height: auto;
+    min-height: 681px;
+}
+
+.galeria .fondonegro {
+    background-color: rgba(41,41,41,0.65);
+    align-content: center;
+    padding: auto;
+    margin: auto;
+    align-items: center;
+}
+
+
+#logologo {margin-left:10px;}
+
 
 
 
@@ -38,7 +72,7 @@ main{
 
 section{
 width: 100%;
-background-color:transparent;
+
 }
 
 
@@ -93,12 +127,24 @@ header{
 }
 
 .boton { margin-top:10px;
-	width:90px;
+	width:120px;
 height: 30px;
 background-color:red;
 padding:5px 10px;
 	font-weight:bold;
 }
+.botonvideo {
+    margin-top: 10px;
+    width: 169px;
+    height: 30px;
+    background-color: red;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+nav ul a {padding-left:0.8em;}
+
+ul {margin-right: 1.5em;}
 .boton:hover { 
 background-color:darkred;
 	
@@ -108,8 +154,8 @@ nav {padding-right:20px;}
 nav a{
     font-weight: 600;
     padding-right: 10px;
-
-    max-width: 992px;
+min-width:500px;
+    
 }
 
 nav a:hover{
@@ -208,6 +254,7 @@ h2{
 
 h3{
     font-size: 30px;
+    color: red;
    /* position: relative;
     left: 155%;
     top: 10%;*/
@@ -216,7 +263,7 @@ h3{
 
 
 /* Small (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width : 290px ) and ( max-width : 767px ){
     main{
         width: auto;
 		min-height: 100vh;
@@ -360,13 +407,12 @@ h3{
         width: auto;
     }
     .section-index{
-        padding-top: 5rem;
-        background-image: url(../imagenesant/antmansi.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: auto;
-		max-height: 100%;
+	padding-top: 5rem;
+	background-image: url(../imagenesant/antmansi.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: auto;
     }
         footer{
         width: auto;
