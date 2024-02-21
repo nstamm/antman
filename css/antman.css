@@ -8,8 +8,19 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+.logoimg .antmanlogo #cascologo {
+}
+.logoimg .antmanlogo #cascologo {
+}
+.logoimg .antmanlogo #cascologo {
+}
+
+
+
 .galeria .videocast p {
     padding-bottom: 20px;
+    font-size: 0.8em;
+    padding-right: 20px;
 
 }
 
@@ -21,7 +32,6 @@ box-sizing: border-box;
 .contenidotrivia .remera {
     width: 408px;
     float: left;
-    margin-left: 25px;
 }
 .contenidotrivia .remera h1 {
     margin: 10px;
@@ -32,20 +42,30 @@ box-sizing: border-box;
 .contenidotrivia {
     padding: 20px 15% 20px 15%;
     background-image: url(../imagenesant/ant-man-costume-t-shirt.jpg);
-    height: auto;
-    min-height: 681px;
+    
+    min-height: 560px;
 }
+
+
 
 .galeria .fondonegro {
     background-color: rgba(41,41,41,0.65);
-    align-content: center;
-    padding: auto;
-    margin: auto;
-    align-items: center;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    width: 100%;
+    vertical-align: top;
+    align-content: top;
+    display: flex;
+ 
+    height: 100%;
 }
 
 
-#logologo {margin-left:10px;}
+#logologo {margin-left:10px; width:220px; height:60px;}
 
 
 
@@ -113,7 +133,10 @@ header{
 
 }
 
-.logoimg{padding:20px;}
+.logoimg{
+    padding: 20px;
+    width: 50%;
+}
 .titulo2{
     font-size: 25px;
     position: absolute;
@@ -181,7 +204,7 @@ footer{
     margin-top: auto;
     display: flex;
     width: 100%;
-    height: 55px;
+    height: 40px;
     background-color: #eb2f06;
     justify-content: space-between;
     align-items: center;
@@ -194,11 +217,15 @@ footer{
     margin: 0 auto;
 }
 footer img{
-    max-width: 60px;
-    margin: 0 .5rem;
+    margin-top: 0;
+    margin-left: .5rem;
+    margin-bottom: 0;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .nombre-alumno{
-    font-size: 20px;
+    font-size: 1em;
     color: #fff;
 }
 .div{
@@ -233,7 +260,8 @@ footer img{
     top: -20%;*/
 }
 .disney img{
-    width: 120px;
+    width: 38px;
+    height: 50px;
 }
 
 h1{
@@ -269,6 +297,17 @@ h3{
 
 /* Small (landscape phones, 576px and up) */
 @media (min-width : 290px ) and ( max-width : 767px ){
+	
+	.contenidotrivia {
+    padding: 15px 15px 15px 15px !important;
+    background-image: url(../imagenesant/ant-man-costume-t-shirt.jpg);
+    height: 100vh;
+    min-height: 700px;
+}
+	.contenidotrivia img {display:none; width:80% !important;padding-left:20%;}
+	.remera { width:95% !important;}
+	form {width:initial !important ;margin-left:0px !important;}
+	.galeria  {height:initial !important;}
     main{
         width: auto;
 		min-height: 100vh;
@@ -310,14 +349,15 @@ h3{
     }
     footer{
         width: auto;
-        height: auto;
+        height: 40px;
     }
     footer img{
         max-width: 100%;
     }
     footer .marvellogo{
-        width: 80px;
+        width: 30px;
         height: auto;
+		margin: 0 !important;
     }
     .uces{
         position: static;
@@ -331,14 +371,37 @@ h3{
         position: static;
     }
     .disney img{
-        width: 70px;
+        width: 40px !important;
     }
+.logoimg .antmanlogo #cascologo {
+    width: 50px;
+    height: 50px;
+}
+	
+	.boton {display:none;}
+	
+.logoimg {
+    padding: 20px 0 0 20px;
+    width: 60%;
+}
+
+.logoimg .antmanlogo #logologo {
+    width: 100px;
+    height: 40px;
+}
+
+
 
 }
 
 
 /* MEDIUM (tablets, 768px and up)/ */
 @media (min-width: 768px) and (max-width: 991px) {
+	
+	.contenidotrivia img {width:250px !important;}
+	.galeria {height:initial !important;}
+	.remera {padding:20px !important;}
+	.boton {display:none;}
     main{
         width: auto;
 		   min-height: 100vh;
@@ -367,7 +430,7 @@ h3{
 		height: 100vh;
     }
     #article1{
-        text-align: center;
+    text-align: center;
     }
     #article1 .titulo{
         position: static!important;
@@ -377,7 +440,7 @@ h3{
     }
     footer{
         width: auto;
-        height: auto;
+        height: 40px;
     }
     footer img{
         max-width: 100%;
@@ -401,6 +464,7 @@ h3{
         width: 70px;
     }
 
+	form {padding:10px !important; margin-top:20px;}
 }
 /* LARGE (desktops, 992px and up)/ */
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -418,10 +482,12 @@ h3{
 	background-repeat: no-repeat;
 	background-position: center center;
 	width: auto;
+		    height: 95vh;
+
     }
         footer{
         width: auto;
-        height: auto;
+        height: 40px;
     }
     #article1{
         margin-left: 1rem;
@@ -452,8 +518,8 @@ h3{
 		max-height:100%;
     }
         footer{
-        max-width: 100%;
-        height: auto;
+    max-width: 100%;
+    height: 40px;
     }
     #article1{
         margin-left: 4rem;
@@ -467,11 +533,15 @@ h3{
 
 @media (min-width: 1440px){
     main{
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 700px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 700px;
+    height: 98vh;
 
     }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
 }

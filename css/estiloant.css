@@ -17,7 +17,7 @@ body{
 main{
 
     width: 1280px;
-    min-height: 810px;
+    min-height: 500px;
    background-image:url(../imagenesant/traj.jpg);
     margin-left: auto;
     margin-right: auto;
@@ -26,6 +26,7 @@ main{
     border-style: solid;
     border-width: 0px;
     border-radius: 0px;
+	height: 90vh !important;
 
 }
 
@@ -105,9 +106,9 @@ h2{
 
 form{
     width: 400px;
-    padding: 30px;
+    padding: 20px;
     background-color: white;
-    margin-left: 100px;
+    margin-left: 50px !important;
     margin-right: auto;
     border-color: #eb2f06;
     border-style: solid;
@@ -123,6 +124,7 @@ form input{
 }
 form label{
     margin-top: 0px;
+    font-size: 0.85em;
 
 }
 form .inline label{
@@ -165,8 +167,8 @@ form .div-botones{
 .btn{
     border: 0;
     font-size: 16px;
-    width: 45%;
-    height: 40px;
+    width: 37%;
+    height: 31px;
     background-color: #eb2f06;
     color: #fff;
     transition: all .3s ease;
@@ -222,7 +224,7 @@ footer img{
     display: block;
 }
 .disney .img-disney{
-    width: 120px;
+    width: 38px;
 }
 
 
@@ -304,7 +306,11 @@ footer img{
 
 
 /*Medium  (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.contenidotrivia {margin:0px;padding:0px !important
+		;}
+	
+	form {margin:0px !important ;padding:0px !important;}
     header .nombre-pelicula{
         font-size: 16px;
     }
@@ -328,6 +334,9 @@ footer img{
 /* LARGE (desktops, 992px and up)/*/
 
 @media (min-width: 992px) and (max-width: 1280px) {
+	
+	.contenidotrivia {padding: 3% 0% 0% 5% !important
+		;}
     main{
         background-image: url(../imagenesant/traj.jpg);
         background-size: cover;
@@ -357,4 +366,7 @@ footer img{
     main form{
     margin: auto;
      }
+}
+
+@media screen{
 }
